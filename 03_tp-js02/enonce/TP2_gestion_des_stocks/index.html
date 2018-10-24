@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TP - Gestion des Stocks</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            const nodes = document.querySelectorAll(".clickable");
+            console.log(nodes)
+            const toggleNode = function() {
+                this.nextElementSibling.classList.toggle("is-active");
+            };
+            nodes.forEach(function(n) {
+                n.onclick = toggleNode;
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1 class="title clickable">TP - Gestion du Stock</h1>
+    <div>
+        <p>
+            Bonne nouvelle :<br>
+            La société bizOnline a besoin d'une solution pour gérer son stock de produits.<br>
+            <b>Votre agence web participe à concours !!!</b><br>
+            Réalisez un prototype d'application web répondant au cahier des charges.<br>
+        </p>
+        <p>
+            Vous travaillerez en équipe.<br>
+            <b>La collaboration est la clé :</b><br>
+            Réfléchissez ensemble<br>
+            Partagez le temps de code !<br>
+            Les équipes seront communiquées en fin de brief.<br>
+            Chaque équipe présentera son code sur github.
+        </p>
+    </div>
+    <hr>
+    <h2 class="title clickable">Besoins client</h2>
+    <div>
+        <p>
+            Une application pour saisir, consulter et supprimer des produits...
+        </p>
+        <ul>
+            <li>Ajouter un nouveau produit au stock.</li>
+            <li>Visualiser le stock dans une liste.</li>
+            <li>Supprimer un produit du stock.</li>
+            <li>[option : modifier les caractéristiques d'un produit. ]</li>
+        </ul>
+    </div>
+    <hr>
+    <h2 class="title clickable">Détails d'un produit</h2>
+    <div class="print-page-break">
+        <p>
+            Un produit possède ces caractéritiques (obligatoires*) :<br>
+            - référence *<br>
+            - nom *<br>
+            - prix *<br>
+            - description *<br>
+            [ option : image, couleurs, poids ]
+            <br>
+            <br>
+            La référence d'un produit est générée <b>automatiquement</b> par l'application.<br>
+            Chaque référence est <b>unique</b>.
+        </p>
+    </div>
+    <hr>
+    <h2 class="title clickable">Interface utilisateur (HTML/CSS)</h2>
+    <div>
+        <p>
+            L'UI sera constituée de 2 modules principaux.
+        </p>
+        <ul>
+            <li>Un module <b style="color: darkorange">formulaire</b> pour saisir/éditer les produits.</li>
+            <li>Un module <b style="color: firebrick">tableur</b> pour lister les produits.</li>
+            <li>Chaque ligne du tableur représente un produit.</li>
+            <li>[ option: chaque ligne du <b style="color: firebrick">tableur</b> comporte un bouton modifier. ]</li>
+        </ul>
+    </div>
+    <hr>
+    <h2 class="title clickable">Brainstorming fonctions "métier" (JS)</h2>
+    <ol>
+        <li>Réfléchir aux fonctions nécessaires pour solutionner le problème.</li>
+        <li>Dans quel(s) cas devrait-on utiliser un Constructeur ?</li>
+        <li>Penser aux signatures des fonctions (paramètres).</li>
+        <li>Penser aux valeur de retour des fonctions.</li>
+        <li>Rédiger la documentation des fonctions avec jsdoc.</li>
+    </ol>
+    <hr>
+    <h2 class="title clickable">Quelques conseils (JS)</h2>
+    <div>
+        <p>Déterminer les var accessibles dans toute l'IIFE ( indice === [ ] ).</p>
+        <p>Récupérer les objets HTML utiles, input, boutons, liens, avec les fonctions de sélection du DOM.</p>
+        <p>Un fois le contenu HTML chargé, déclencher des <i>events listeners</i> pour lier l'UI aux fonctions métier.</p>
+    </div>
+    <hr>
+    <h2 class="title clickable">Exemple : séquence d'instructions</h2>
+    <div class="print-page-break">
+        <p>
+            Au click sur un lien, afficher le module formulaire.<br>Au click sur le bouton du <b style="color: darkorange">formulaire</b>, une fonction vérifie les caractéristiques saisies.<br> Si ok, une fonction insère un nouveau produit dans un array stock et dans le <b style="color: firebrick">tableur</b> HTML.</li>
+        </p>
+    </div>
+    <hr>
+    <h2 class="title" style="margin-bottom: 35px;">Composition des Agences Web !</h2>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>Ayaba</td>
+            <td>Mohammed</td>
+            <td>Othman</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Fégan</td>
+            <td>Bernard</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kader</td>
+            <td>Laetitia</td>
+            <td>Sabuj</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Haroon</td>
+            <td>Jimmy</td>
+            <td>Sophie</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>Nakkib</td>
+            <td>Denis</td>
+            <td>Elias</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>Farida</td>
+            <td>Fatima</td>
+            <td>Cédric</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>Nathalie</td>
+            <td>Laurie</td>
+            <td>Quentin</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>Richard</td>
+            <td>Adam</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

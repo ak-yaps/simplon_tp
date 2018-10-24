@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Avenir;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.title {
+    color: dodgerblue;
+    font-size: 1.3rem;
+}
+p {
+    box-shadow: -0.9px 0.1px 6.1px 0.2px #696666;
+    padding: 15px;
+    line-height: 23px;
+    text-align: left;
+    border-radius: .1rem;
+}
+@media print {
+    .print-page-break {
+        page-break-after: always;
+    }
+}
+@media screen {
+    .clickable {
+        user-select: none;
+        cursor: pointer;
+    }
+    .clickable + * {
+        height: 0;
+        transition: all 1s linear;
+    }
+    .clickable + :not(.is-active) {
+        overflow: hidden;
+    }
+    .clickable + .is-active {
+        height: auto;
+    }
+    p,
+    li {
+        max-width: 60%;
+    }
+}
+table {
+    border-collapse: collapse;
+}
+tr, td {
+    border: 1px solid;
+}
+td {
+    text-align: center;
+    line-height: 32px;
+    min-width: 120px;
+    font-size: 1.1rem;
+}
+tr:nth-child(odd) {
+    background: lightgray;
+}

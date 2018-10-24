@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1%;
+  font-size: 1.2em;
+}
+
+input:active {
+ background: plum;
+}
+
+input#display {
+  padding: 3%;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+input#affich_res:active {
+  background: transparent;
+}
+
+div#wrap {
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+div#numbers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+div.operators, div.reset {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+input.figure {
+  flex: 1 0 30%;
+  margin: calc(2.5% / 2);
+
+}
+
+input.operator, input.reset_button {
+  padding: 5%;
+}

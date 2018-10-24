@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(247, 223, 30);
+  text-align: center;
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+
+button {
+  border: 1px solid;
+  padding: 2em;
+  margin-top: 2em;
+  background: black;
+  color: rgb(247, 223, 30);
+  outline-color: rgb(247, 223, 30);
+  box-shadow: 10px 10px 5px black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  background: rgb(247, 223, 30);
+  color: black;
+  outline-color: black;
+}
+
+button.btnSupp {
+  margin: 0 auto;
+  background: red;
+  font-weight: bolder;
+  padding: 1em;
+}
+
+button.btnSupp:active {
+  background:  rgb(247, 223, 30);
+  color:  red;
+  outline-color:  red;
+}
+
+h1, h2 {
+  margin-bottom: 3%;
+}
+
+input {
+border: 1px solid black;
+border-radius: 5px;
+font-size: 1.2em;
+padding: 1%;
+margin: 3% auto;
+width: 40%;
+background: transparent;
+}
+
+table{
+  margin: 100px auto;
+  border: 2px solid;
+  border-collapse: collapse;
+
+}
+
+th, th, td, tbody{
+  padding: 10px;
+  border: 2px solid;
+  border-collapse: collapse;
+}

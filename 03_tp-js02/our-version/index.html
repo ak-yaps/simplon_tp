@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TP Gestion des stocks</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>TP Gestion des stocks</h1>
+  <form id="formulaire" onsubmit="return verifForm()">
+    <h2>Veuillez saisir un produit</h2>
+    <label for="nom">Nom du produit</label><br><input type="text" name="nom" id="nom" required><br>
+    <label for="prix">Prix</label><br><input type="text" name="prix" value="" id="prix"><br>
+    <label for="couleur">Couleur</label><br><input type="text" name="couleur" value="" id="couleur"><br>
+    <label for="poids">Poids</label><br><input type="text" name="poids" value="" id="poids"><br>
+  </form>
+      <button type="submit" id="btnValider">Valider</button>
+    <table id="table">
+      <thead>
+        <tr>
+        <th>Référence</th>
+        <th>Nom du produit</th>
+        <th>Prix</th>
+        <th>Couleur</th>
+        <th>Poids</th>
+        <th>SUPPRIMER</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+    </table>
+
+    <div id="test"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: whitesmoke;
+}
+
+/* HEADER */
+
+div.logo {
+  height: 72px;
+  background: url('../img/logo.png') center center no-repeat;
+  background-color: orangered;
+}
+
+div.description {
+  height: 28px;
+  background: black;
+  color: gray;
+  padding-left: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* CONTAINER MAIN */
+
+div.main {
+  width: 756px;
+  margin: auto;
+}
+
+/* SLIDE */
+
+section.slide {
+  background: url('../img/slide.jpg') 0 0 no-repeat;
+  height: 505px;
+  width: 756px;
+  background-size: cover;
+}
+
+div.slide_content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.logo_puma {
+  width: 150px;
+}
+
+div.orange_slash {
+  background: orangered;
+  height: 6px;
+  width: 60px;
+  margin: 15px;
+}
+
+h2.title {
+  color: white;
+  text-transform: capitalize;
+}
+
+h3.catchphrase {
+  font-size: 1.2em;
+  color: white;
+  font-weight: 200;
+}
+
+a.external_link {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px;
+  color: white;
+  margin-top: 50px;
+}
+
+a.external_link:hover {
+  border: 1px solid #ff4500;
+  background: #ff4500;
+  padding: 5px;
+  color: black;
+}
+
+/* fLIP NIXON-AIRMAX */
+
+section.flip {
+  position: relative;
+  bottom: 20px;
+}
+
+section.blog {
+  display: flex;
+  flex-flow: row wrap;
+  width: 756px;
+  height: 379px;
+}
+
+a.more {
+  text-decoration: none;
+  color: white;
+  background: #ff4500;
+  padding: 10px;
+}
+
+a.more:hover {}
+
+.global {
+  width: 756px;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+}
+
+.wrap {
+  max-width: 378px;
+  perspective: 600px;
+}
+
+.wrap:hover .page {
+  transform: rotateY(180deg);
+}
+
+.wrap, .devant, .arriere {
+  width: 378px;
+  height: 255px;
+}
+
+.page {
+  transition: 0.6s;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.devant, .arriere {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arriere {
+  transform: rotateY(180deg);
+  background: black;
+  padding: 25px;
+  color: white;
+  text-align: justify;
+}
+
+.devant {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+section.title_blog {
+  height: 166px;
+}
+
+/* FLIP2 */
+
+.global2 {
+  width: 378px;
+  height: 379px;
+}
+
+.wrap2 {
+  max-width: 378px;
+  perspective: 600px;
+}
+
+.wrap2:hover .page2 {
+  transform: rotateY(180deg);
+}
+
+.wrap2, .devant2, .arriere2 {
+  width: 378px;
+  height: 379px;
+}
+
+.page2 {
+  transition: 0.6s;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.devant2, .arriere2 {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arriere2 {
+  transform: rotateY(180deg);
+  background: black;
+  padding: 25px;
+  color: white;
+  text-align: justify;
+}
+
+.devant2 {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.devant2 figure img {
+  height: 379px;
+  width: 378px;
+}
+
+/* FOUR_BLOCS */
+
+section.four_blocs {
+  width: 378px;
+  height: 379px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.bloc {
+  width: 189px;
+  height: 189px;
+  background: white;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+article.bloc>p {
+  font-size: 14px;
+  padding: 0 10px;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+img.img_bloc {
+  width: 189px;
+  height: 190px;
+}
+
+img.arrow {
+  width: 20px;
+}
+
+img.left {
+  transform: rotate(180deg);
+}
+
+/* REVERSE */
+
+.blog_reverse {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  width: 756px;
+  height: 379px;
+}
+
+/* TITLE BLOG */
+
+.title_blog {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.blog_title {
+  text-transform: capitalize;
+}
+
+.blog_sub-title {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: darkgrey;
+}
+
+/* READ MORE */
+
+.read_more {
+  text-decoration: none;
+  border: 1px solid darkgrey;
+  padding: 5px;
+  color: darkgrey;
+}
+
+/* FOOTER */
+
+footer {
+  min-height: 400px;
+  width: 100%;
+  background: #161616;
+  text-align: center;
+}
+
+div.carre_orange {
+  background: #FF4500;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+}
+
+.nav_footer ul {}
+
+.nav_footer ul li {
+  list-style: none;
+  float: left;
+  width: 50px;
+}
